@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" type="image/png" sizes="32x32" href="../media/favicon.png">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authmeister</title>
+    <title>Monoroh Developer Apps</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/develop_favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -23,60 +23,76 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             color: #333;
         }
-        h1 {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: #383C56;
+        .logo {
+            width: 256px;
+            height: 256px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 1px solid #383C56;
         }
-        p {
-            font-size: 18px;
+        .tagline {
+            font-size: 16px;
             font-weight: 400;
-            margin-bottom: 20px;
+            color: #555;
+            margin-bottom: 30px;
         }
-        b {
+        .apps-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .app {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .app-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            margin-bottom: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .app-link:hover {
+            transform: scale(1.05);
+        }
+        .app-icon {
+            width: 128px;
+            height: 128px;
+            border-radius: 20px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .app h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 8px 0;
             color: #383C56;
         }
         .store-buttons {
             display: flex;
             justify-content: center;
             gap: 12px;
-            margin-top: 20px;
             flex-wrap: wrap;
         }
         .store-buttons a img {
-            width: 180px;
-            height: 60px;
+            width: 140px;
+            height: 50px;
             object-fit: contain;
             transition: transform 0.2s ease-in-out;
         }
         .store-buttons a img:hover {
             transform: scale(1.05);
         }
-        .links {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 0px;
-            flex-wrap: wrap;
-        }
-        .links a {
-            color: #383C56 !important;
-            text-decoration: underline !important;
-            font-weight: bold;
-            padding: 10px;
-            display: inline-block;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-
         @media (max-width: 600px) {
-            .store-buttons {
+            .apps-container {
                 flex-direction: column;
-                gap: 10px;
             }
         }
     </style>
@@ -84,28 +100,42 @@
 <body>
 
 <div class="container">
-    <h1>Authmeister</h1>
-    <p>
-        A modern <b>OTP Authenticator</b> supporting both <b>TOTP</b> and <b>HOTP</b>.
-        It ensures compatibility with various services by implementing the
-        <b>otpauth-migration</b> URI standard, allowing seamless migration from other authenticators including <b>Google
-        Authenticator</b>.
-    </p>
+    <!-- Monoroh Developer Logo -->
+    <img src="../media/develop_logo_512x512.png" alt="Monoroh Logo" class="logo">
+    <p class="tagline">Crafting seamless multiplatform experiences, one elegant line of code at a time.</p>
 
-    <div class="store-buttons">
-        <!-- Google Play Store Button -->
-        <a href="https://play.google.com/store/apps/details?id=com.kopylovis.authmeister" target="_blank">
-            <img src="../media/googleplay.svg" alt="Get it on Google Play">
-        </a>
+    <div class="apps-container">
+        <!-- Authmeister App -->
+        <div class="app">
+            <a href="/authmeister/" class="app-link">
+                <img src="../media/authmeister_512x512.png" alt="Authmeister Icon" class="app-icon">
+                <h2>Authmeister</h2>
+            </a>
+            <div class="store-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.kopylovis.authmeister" target="_blank">
+                    <img src="../media/googleplay.svg" alt="Get it on Google Play">
+                </a>
+                <a href="https://apps.apple.com/app/id123456789" target="_blank">
+                    <img src="../media/appstore.svg" alt="Download on the App Store">
+                </a>
+            </div>
+        </div>
 
-        <!-- App Store Button -->
-        <a href="https://apps.apple.com/app/id123456789" target="_blank">
-            <img src="../media/appstore.svg" alt="Download on the App Store">
-        </a>
-    </div>
-    <div class="links">
-        <a href="privacy/index.html">Privacy Policy</a>
-        <a href="terms/index.html">Terms and Conditions</a>
+        <!-- Sympee App -->
+        <div class="app">
+            <a href="https://sympee.ru" target="_blank" class="app-link">
+                <img src="../media/sympee_512x512.png" alt="Sympee Icon" class="app-icon">
+                <h2>Sympee</h2>
+            </a>
+            <div class="store-buttons">
+                <a href="https://play.google.com/store/apps/details?id=ru.sympee.mobile" target="_blank">
+                    <img src="../media/googleplay.svg" alt="Get it on Google Play">
+                </a>
+                <a href="https://apps.apple.com/app/id987654321" target="_blank">
+                    <img src="../media/appstore.svg" alt="Download on the App Store">
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
