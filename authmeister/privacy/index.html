@@ -1,119 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" type="image/png" sizes="32x32" href="../../media/develop_favicon.png">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy – Authmeister</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Privacy Policy - Authmeister</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../media/develop_favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'DM Sans', sans-serif;
-            text-align: center;
-            background-color: #ffffff;
-            padding: 40px;
-            color: #333;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0f172a;
+            background-image: 
+                radial-gradient(circle at 25% 25%, #1e293b 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, #334155 2px, transparent 2px);
+            background-size: 50px 50px;
+            background-position: 0 0, 25px 25px;
+            min-height: 100vh;
+            color: #f1f5f9;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+        
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: #F0EDEF;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            color: #333;
+            padding: 60px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 8px;
+            background: rgba(30, 41, 59, 0.8);
+            transition: all 0.3s ease;
+            margin-bottom: 30px;
+        }
+        
+        .back-link:hover {
+            background: rgba(30, 41, 59, 1);
+            transform: translateY(-2px);
+        }
+        
+        .content-card {
+            background: rgba(30, 41, 59, 0.9);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(51, 65, 85, 0.5);
             text-align: left;
         }
+        
         h1, h2, h3, h4 {
-            color: #383C56;
+            color: #f1f5f9;
             text-align: center;
+            margin-bottom: 20px;
         }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #60a5fa;
+            margin-top: 30px;
+        }
+        
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 25px;
+        }
+        
+        h4 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+        
         p {
+            color: #cbd5e1;
+            margin-bottom: 15px;
             font-size: 16px;
-            line-height: 1.6;
         }
+        
         b {
-            color: #383C56;
+            color: #f1f5f9;
+            font-weight: 600;
         }
+        
         ul {
-            padding-left: 20px;
+            margin-left: 20px;
+            margin-bottom: 15px;
         }
+        
+        li {
+            color: #cbd5e1;
+            margin-bottom: 8px;
+        }
+        
         a {
-            color: #383C56;
+            color: #60a5fa;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
         }
+        
         a:hover {
             text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 15px;
+            }
+            
+            .content-card {
+                padding: 24px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <a href="/authmeister/" class="back-link">← Back to Authmeister</a>
+        </div>
+        
+        <div class="content-card">
+            <h1>Privacy Policy</h1>
+            <p><b>Last updated: March 05, 2025</b></p>
+            <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
+                information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+            <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection
+                and use of information in accordance with this Privacy Policy.</p>
 
-<div class="container">
-    <h1>Privacy Policy</h1>
-    <p><b>Last updated: March 05, 2025</b></p>
-    <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your
-        information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
-    <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection
-        and use of information in accordance with this Privacy Policy.</p>
+            <h2>Interpretation and Definitions</h2>
+            <h3>Interpretation</h3>
+            <p>The words of which the initial letter is capitalized have meanings defined under the following conditions.</p>
 
-    <h2>Interpretation and Definitions</h2>
-    <h3>Interpretation</h3>
-    <p>The words of which the initial letter is capitalized have meanings defined under the following conditions.</p>
+            <h3>Definitions</h3>
+            <p>For the purposes of this Privacy Policy:</p>
+            <ul>
+                <li><b>Account</b> means a unique account created for You to access our Service.</li>
+                <li><b>Application</b> refers to Authmeister, the software program provided by the Company.</li>
+                <li><b>Company</b> refers to Authmeister.</li>
+                <li><b>Device</b> means any device that can access the Service.</li>
+                <li><b>Personal Data</b> is any information that relates to an identified or identifiable individual.</li>
+                <li><b>Service</b> refers to the Application.</li>
+                <li><b>Service Provider</b> means third-party companies or individuals employed by the Company.</li>
+                <li><b>Usage Data</b> refers to data collected automatically.</li>
+            </ul>
 
-    <h3>Definitions</h3>
-    <p>For the purposes of this Privacy Policy:</p>
-    <ul>
-        <li><b>Account</b> means a unique account created for You to access our Service.</li>
-        <li><b>Application</b> refers to Authmeister, the software program provided by the Company.</li>
-        <li><b>Company</b> refers to Authmeister.</li>
-        <li><b>Device</b> means any device that can access the Service.</li>
-        <li><b>Personal Data</b> is any information that relates to an identified or identifiable individual.</li>
-        <li><b>Service</b> refers to the Application.</li>
-        <li><b>Service Provider</b> means third-party companies or individuals employed by the Company.</li>
-        <li><b>Usage Data</b> refers to data collected automatically.</li>
-    </ul>
+            <h2>Collecting and Using Your Personal Data</h2>
+            <h3>Types of Data Collected</h3>
+            <h4>Personal Data</h4>
+            <p>We may ask You to provide Us with personally identifiable information, such as:</p>
+            <ul>
+                <li>Usage Data</li>
+            </ul>
 
-    <h2>Collecting and Using Your Personal Data</h2>
-    <h3>Types of Data Collected</h3>
-    <h4>Personal Data</h4>
-    <p>We may ask You to provide Us with personally identifiable information, such as:</p>
-    <ul>
-        <li>Usage Data</li>
-    </ul>
+            <h3>Use of Your Personal Data</h3>
+            <p>We may use Personal Data for the following purposes:</p>
+            <ul>
+                <li><b>To provide and maintain our Service</b>, including to monitor its usage.</li>
+                <li><b>To manage Your Account</b> and registration as a user.</li>
+                <li><b>For business transfers</b>, including mergers or acquisitions.</li>
+                <li><b>For legal compliance</b> and security.</li>
+            </ul>
 
-    <h3>Use of Your Personal Data</h3>
-    <p>We may use Personal Data for the following purposes:</p>
-    <ul>
-        <li><b>To provide and maintain our Service</b>, including to monitor its usage.</li>
-        <li><b>To manage Your Account</b> and registration as a user.</li>
-        <li><b>For business transfers</b>, including mergers or acquisitions.</li>
-        <li><b>For legal compliance</b> and security.</li>
-    </ul>
+            <h2>Retention of Your Personal Data</h2>
+            <p>We retain Personal Data only as long as necessary to comply with legal obligations.</p>
 
-    <h2>Retention of Your Personal Data</h2>
-    <p>We retain Personal Data only as long as necessary to comply with legal obligations.</p>
+            <h2>Security of Your Personal Data</h2>
+            <p>While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its
+                absolute security.</p>
 
-    <h2>Security of Your Personal Data</h2>
-    <p>While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its
-        absolute security.</p>
+            <h2>Children's Privacy</h2>
+            <p>Our Service does not address anyone under the age of 13.</p>
 
-    <h2>Children’s Privacy</h2>
-    <p>Our Service does not address anyone under the age of 13.</p>
+            <h2>Links to Other Websites</h2>
+            <p>Our Service may contain links to other websites that are not operated by Us.</p>
 
-    <h2>Links to Other Websites</h2>
-    <p>Our Service may contain links to other websites that are not operated by Us.</p>
+            <h2>Changes to this Privacy Policy</h2>
+            <p>We may update Our Privacy Policy from time to time.</p>
 
-    <h2>Changes to this Privacy Policy</h2>
-    <p>We may update Our Privacy Policy from time to time.</p>
-
-    <h2>Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, You can contact us:</p>
-    <ul>
-        <li>By email: <a href="mailto:mnrhwow@gmail.com">mnrhwow@gmail.com</a></li>
-    </ul>
-</div>
-
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, You can contact us:</p>
+            <ul>
+                <li>By email: <a href="mailto:mnrhwow@gmail.com">mnrhwow@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
