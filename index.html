@@ -409,6 +409,51 @@
                 </div>
 
                 <script>
+                    function detectOS() {
+                        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+                        
+                        if (/android/i.test(userAgent)) {
+                            return 'android';
+                        }
+                        
+                        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                            return 'ios';
+                        }
+                        
+                        return 'desktop';
+                    }
+                    
+                    function showAppropriateStoreButtons() {
+                        const os = detectOS();
+                        const storeButtons = document.querySelectorAll('.store-buttons');
+                        
+                        storeButtons.forEach(storeButtonsContainer => {
+                            const googlePlayLink = storeButtonsContainer.querySelector('a[href*="play.google.com"]');
+                            const appStoreLink = storeButtonsContainer.querySelector('a[href*="apps.apple.com"]');
+                            const ruStoreLink = storeButtonsContainer.querySelector('a[href*="rustore.ru"]');
+                            
+                            if (os === 'android') {
+                                // Android: show Google Play and RuStore
+                                if (googlePlayLink) googlePlayLink.style.display = 'block';
+                                if (appStoreLink) appStoreLink.style.display = 'none';
+                                if (ruStoreLink) ruStoreLink.style.display = 'block';
+                            } else if (os === 'ios') {
+                                // iOS: show only App Store
+                                if (googlePlayLink) googlePlayLink.style.display = 'none';
+                                if (appStoreLink) appStoreLink.style.display = 'block';
+                                if (ruStoreLink) ruStoreLink.style.display = 'none';
+                            } else {
+                                // Desktop/other: show all buttons
+                                if (googlePlayLink) googlePlayLink.style.display = 'block';
+                                if (appStoreLink) appStoreLink.style.display = 'block';
+                                if (ruStoreLink) ruStoreLink.style.display = 'block';
+                            }
+                        });
+                    }
+                    
+                    // Initialize when page loads
+                    document.addEventListener('DOMContentLoaded', showAppropriateStoreButtons);
+                    
                     document
                         .querySelectorAll('.store-buttons .store-link')
                         .forEach(link => {
