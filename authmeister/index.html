@@ -200,23 +200,64 @@
         }
         
         @media (max-width: 768px) {
+            .hero-section {
+                padding: 40px 15px;
+            }
+
             .app-header {
                 flex-direction: column;
                 gap: 16px;
             }
             
             .app-card {
-                padding: 24px;
-                margin: 0 20px;
+                padding: 20px;
+                margin: 0 15px;
+                max-width: none;
+            }
+
+            .app-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .app-info h1 {
+                font-size: 28px;
+            }
+
+            .app-category {
+                font-size: 14px;
+            }
+
+            .app-description {
+                font-size: 16px;
+                margin-bottom: 24px;
             }
             
             .app-features {
                 grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .app-features li {
+                font-size: 14px;
+                padding: 10px 0;
+                padding-left: 28px;
+            }
+
+            .app-features li::before {
+                left: 10px;
             }
             
             .store-buttons {
-                flex-direction: column;
+                flex-direction: row;
                 gap: 12px;
+                margin-bottom: 24px;
+                flex-wrap: wrap;
+            }
+
+            .store-buttons a img {
+                width: 130px;
+                height: 39px;
             }
             
             .links {
@@ -228,6 +269,41 @@
                 position: static;
                 margin-bottom: 20px;
                 display: inline-block;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 30px 10px;
+            }
+
+            .app-card {
+                padding: 16px;
+                margin: 0 10px;
+            }
+
+            .app-icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            .app-info h1 {
+                font-size: 24px;
+            }
+
+            .app-description {
+                font-size: 14px;
+            }
+
+            .app-features li {
+                font-size: 13px;
+                padding: 8px 0;
+                padding-left: 26px;
+            }
+
+            .store-buttons a img {
+                width: 110px;
+                height: 33px;
             }
         }
     </style>

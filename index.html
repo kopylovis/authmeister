@@ -285,27 +285,149 @@
         }
 
         @media (max-width: 768px) {
+            .hero-section {
+                padding: 40px 15px;
+            }
+
             .apps-grid {
                 grid-template-columns: 1fr;
                 gap: 24px;
             }
 
             .app-card {
-                padding: 24px;
+                padding: 20px;
+                margin: 0 10px;
             }
 
             .profile-card {
-                padding: 24px;
-                margin: 0 20px;
+                padding: 20px;
+                margin: 0 15px;
+                max-width: none;
+            }
+
+            .profile-image {
+                width: 100px;
+                height: 100px;
+            }
+
+            .name {
+                font-size: 28px;
+            }
+
+            .title {
+                font-size: 16px;
+            }
+
+            .bio {
+                font-size: 14px;
+                margin-bottom: 20px;
             }
 
             .contact-links {
+                flex-direction: row;
+                gap: 12px;
+                justify-content: center;
+            }
+
+            .app-header {
                 flex-direction: column;
                 gap: 12px;
+                text-align: center;
+            }
+
+            .app-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .app-info h3 {
+                font-size: 20px;
+            }
+
+            .app-description {
+                font-size: 14px;
+            }
+
+            .app-features {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .app-features li {
+                font-size: 14px;
+                padding: 8px 0;
+                padding-left: 24px;
             }
 
             .store-buttons {
                 justify-content: center;
+                flex-direction: row;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            .store-buttons a img {
+                width: 110px;
+                height: 33px;
+            }
+
+            .section-title {
+                font-size: 28px;
+                margin-bottom: 12px;
+            }
+
+            .section-subtitle {
+                font-size: 16px;
+                margin-bottom: 40px;
+            }
+
+            .apps-section {
+                padding: 60px 15px;
+            }
+
+            .footer {
+                padding: 30px 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section {
+                padding: 30px 10px;
+            }
+
+            .apps-section {
+                padding: 40px 10px;
+            }
+
+            .profile-card {
+                padding: 16px;
+                margin: 0 10px;
+            }
+
+            .app-card {
+                padding: 16px;
+                margin: 0 5px;
+            }
+
+            .name {
+                font-size: 24px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            .app-info h3 {
+                font-size: 18px;
+            }
+
+            .skills {
+                gap: 6px;
+            }
+
+            .skill-tag {
+                font-size: 11px;
+                padding: 4px 8px;
             }
         }
     </style>
